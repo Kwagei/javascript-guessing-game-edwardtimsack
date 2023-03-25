@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess Game</title>
+</head>
+<body>
+    
+    <header>
+        <div class="left">
+            <div class="chances" id="name">chances</div>
+            <div class="lives">---</div>
+        </div>
+        <div class="update"></div>
+        <div class="begin" data-start="wrong">
+    <button onclick="checkGuess()">Guess</button>
+
+        </div>
+
+    </header>
+    <div class="guessArea">
+     <input type="number" id="guess" placeholder="   type your luckiest number">
+
+    </div>
+    <article>
+        <h1>Guess Game</h1>
+    </article>
+    
+    <div class="guides">
+    <h2>Instructions</h2>
+    
+    <p>1. Guess the luckiest number.</p>
+    <p>2. Enter a number from 1 - 100.</p>
+    <p>3. User are given tips or hints after typing.</p>
+    <p>4. Tips and Hints are given below the last Instructions</p>
+    <p></p>
+    </div>
+
+    <!-- <button onclick="checkGuess()">Guess</bu34tton> -->
+    <p id="result"></p>
+    <section class=""></section>
+  
+    <script src="app.js"></script>
+</body>
+</html>
