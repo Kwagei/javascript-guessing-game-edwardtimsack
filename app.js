@@ -1,39 +1,109 @@
-// const section = document.querySelector('section')
-// const article = document.querySelector('article')
-// const update  = document.querySelector('.update')
+// Generate a random number between 1 and 100
+// var randomNumber = Math.floor(Math.random() * 100) + 1;
 
-let randomNumber = Math.floor(Math.random() * 100) + 1;
+// Print the random number to the console
+// console.log(randomNumber);
 
-let guesses = 0;
+ // Display the random number on the webpage
+    //   var randomNumberElement = document.getElementById("random-number");
+    //   randomNumberElement.innerHTML = randomNumber;
 
-function checkGuess() {
-  let guess = parseInt(document.getElementById("guess").value);
-  guesses++;
+    // var randomNumber = Math.floor(Math.random() * 100) + 1;
 
-  if (guess === randomNumber) {
-    document.getElementById("result").innerHTML = `Congratulations! You guessed the number in ${guesses} guesses.`;
-  } else if (guess > randomNumber) {
-    document.getElementById("result").innerHTML = "Too high. Guess again.";
-  } else if (guess < randomNumber) {
-    document.getElementById("result").innerHTML = "Too low. Guess again.";
-  }
-}
-// In this game, the player enters a number into the input field and clicks the "Guess" button. 
-// The checkGuess() function is called, which compares the player's guess to the randomly generated number. 
-// If the guess is correct, a message is displayed with the number of guesses it took to get it right. If the guess is too high or too low, a message is displayed prompting the player to guess again. The CSS code is used to style the elements on the page.
+    // Display the random number on the webpage
+    // var randomNumberElement = document.getElementById("random-number");
+    // randomNumberElement.innerHTML = randomNumber;
 
 
+    // Generate three random numbers between 1 and 100
+    // var randomNumber1 = Math.floor(Math.random() * 100) + 1;
+    // var randomNumber2 = Math.floor(Math.random() * 100) + 1;
+    // var randomNumber3 = Math.floor(Math.random() * 100) + 1;
+    // var randomNumber4 = Math.floor(Math.random() * 100) + 1;
+    // var randomNumber5 = Math.floor(Math.random() * 100) + 1;
+    // var randomNumber6 = Math.floor(Math.random() * 100) + 1;
+
+    // Create three new button elements
+    // var button1 = document.createElement("button");
+    // var button2 = document.createElement("button");
+    // var button3 = document.createElement("button");
+    // var button4 = document.createElement("button");
+    // var button5 = document.createElement("button");
+    // var button6 = document.createElement("button");
+
+    // Set the text of each button to a random number
+    // button1.innerText = randomNumber1;
+    // button2.innerText = randomNumber2;
+    // button3.innerText = randomNumber3;
+    // button4.innerText = randomNumber4;
+    // button5.innerText = randomNumber5;
+    // button6.innerText = randomNumber6;
 
 
+    // Add the buttons to the button container div
+    // var buttonContainer = document.getElementById("button-container");
+    // buttonContainer.appendChild(button1);
+    // buttonContainer.appendChild(button2);
+    // buttonContainer.appendChild(button3);
+    // buttonContainer.appendChild(button4);
+    // buttonContainer.appendChild(button5);
+    // buttonContainer.appendChild(button6);
+
+  
+    function generateButtons(numButtons) {
+      const buttonContainer = document.getElementById("button-container");
+      const randomNumbers = Array.from({length: numButtons}, () => Math.floor(Math.random() * 100));
+
+      for (let i = 0; i < numButtons; i++) {
+        const button = document.createElement("button");
+        button.textContent = randomNumbers[i];
+        buttonContainer.appendChild(button);
+      }
+    }
+
+    generateButtons(100);
+    
+    var arr = ['1-101'];
+    var i = arr.length, j, temp;
+    
+    // const numButtons = 100;
+    // const numTrials = 7;
+    // let randomNumbers = Array.from({length: numButtons}, () => Math.floor(Math.random() * 100));
+    // let attemptsRemaining = numTrials;
+
+    // function generateButtons() {
+    //   const buttonContainer = document.getElementById("button-container");
+
+    //   for (let i = 0; i < numButtons; i++) {
+    //     const button = document.createElement("button");
+    //     button.textContent = randomNumbers[i];
+    //     buttonContainer.appendChild(button);
+
+    //     // add event listener to each button
+    //     button.addEventListener("click", () => {
+    //       attemptsRemaining--;
+    //       button.disabled = true;
+    //       console.log(`You clicked ${randomNumbers[i]}! ${attemptsRemaining} attempts remaining.`);
+          
+    //       if (attemptsRemaining === 0) {
+    //         console.log("Game over!");
+    //         // reset the game
+    //         attemptsRemaining = numTrials;
+    //         randomNumbers = Array.from({length: numButtons}, () => Math.floor(Math.random() * 100));
+    //         buttonContainer.innerHTML = "";
+    //         generateButtons();
+    //       }
+    //     });
+    //   }
+    // }
+
+    // generateButtons();
 
 
+    function reloadPage(){
+      var lives = 7
+      statsDiv.textContent = 'Lives = ${lives}'
 
-
-
-
-
-
-
-
-
-
+      
+    }
+    

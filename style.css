@@ -5,6 +5,10 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    /* background-color: aqua; */
+}
 header{
     width: 100%;
     height: 80px;
@@ -16,7 +20,6 @@ header{
     position: sticky;
     top: 0;
 }
-
 .left{
     width: 200px;
     height: 50%;
@@ -38,79 +41,59 @@ header{
 
 
 }
-.start{
-    cursor: pointer;
-    height: 40%;
-    width: 150px;
-    background-color: lightgray;
-    display: flex;
-    justify-content: center;
-    box-shadow: 1px 1px 5px black;
-}
-#name{
-    border-right: 2px solid darkgray;
-}
-.begin{
-    border-radius: 50%;
-    padding: 1rem;
-    background-color: ghostwhite;
-    cursor: pointer;
-
-}
-section{
-    width: 100%;
-    display: none;
-    justify-content: center;
-    padding: 2rem 0px;
-    flex-direction: column;
-    align-items: center;
-
-}   
-button{
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    border: none;
-    background-color: rgb(250, 249, 246);
-    font-weight: 200;
-    font-size: large;
-    cursor: pointer;
-    align-items: center;
-}
 article{
     width: auto;
     /* height: 40vh; */
     justify-content: center;
     align-items: center;
-    margin: 80px auto;
-    border-radius: 20px;
-    display: flex;
+    margin-top: 40px;
+    /* border-radius: 20px; */
+    /* background-color: turquoise; */
+}
+article p{
+    text-align: center;
 }
 h1{
     text-align: center;
     color: shadegray;
-    font-weight: 400;
-    font-size: 6rem;
+    /* font-weight: 400; */
+    /* font-size: 6rem; */
 }
 .update{
+    background-color: ghostwhite;
     font-weight: 600;
     padding: 1em;
+    cursor: pointer;
+    color: black;
+    border-radius: 60%;
+}
+#button-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 5rem));
+    grid-auto-rows: minmax(5rem, 5rem);
+    /* grid-template-columns: repeat 4fr; */
+    /* grid-template-rows: repeat(4fr); */
+    justify-content: center;
+    outline: none;
+    /* background-color: darkorange; */
+    gap: 9px;
+    margin: 5px;
+}
+button{
+    border-radius: 50%;
+    box-shadow: 21px 1px 4px solid gold;
+    box-shadow: 3px solid violet;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(50, 49, 46);
+    color: var(--black);
+    
+
+    /* background-color: rgb(250, 249, 246); */
     color: white;
+    /* font-weight: 200; */
+    font-size: large;
 }
-.guides{
-    background-color: aqua;
-    text-align: left;
-}
-.guides p{
-    /* font-size: 25px; */
-    margin-left: 230px;
-}
-.guessArea{
-    background-color: bluev/iolet;
-}
-.guessArea input{
-    margin-left: 60rem;
-    margin-top: 30px;
-    height: 30px;
-    width: 200px;
+.update button{
+    background-color: #00AAFF;
 }
