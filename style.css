@@ -37,6 +37,7 @@ header{
 
 
 }
+.chances
 article{
     width: auto;
     justify-content: center;
@@ -49,6 +50,8 @@ article p{
 }
 h1{
     text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
    
 }
 .update{
@@ -86,4 +89,7 @@ button{
     border-radius: 10%;
     color: black;
 
+}
+.chances{
+    border-right: 5px solid black;
 }
