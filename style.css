@@ -52,6 +52,8 @@ h1{
     text-align: center;
     margin-top: 20px;
     font-size: 50px;
+    /* background-color: red; */
+    
    
 }
 .update{
@@ -71,11 +73,10 @@ h1{
     gap: 9px;
     margin: 5px;
     text-align: center;
+    margin-top: 20px;
 }
 button{
     border-radius: 50%;
-    /* box-shadow: 21px 1px 4px solid gold; */
-    /* box-shadow: 3px solid violet; */
     cursor: pointer;
     border: none;
     background-color: rgb(50, 49, 46);
@@ -90,6 +91,16 @@ button{
     color: black;
 
 }
+#start-button:hover{
+    background-color: black;
+    color: white;
+}
 .chances{
     border-right: 5px solid black;
+}
+#game{
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
 }
