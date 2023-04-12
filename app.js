@@ -39,7 +39,7 @@ startBtn.addEventListener("click", function () {
               button.style.backgroundColor = 'red';
 
             }
-            words.textContent = "Game is Over"
+            words.textContent = "Congratulations, You Won!"
 
           } else if(Number(button.textContent) < luckyNumber) {
             words.style.display = 'block';
