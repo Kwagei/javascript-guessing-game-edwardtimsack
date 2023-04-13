@@ -83,6 +83,13 @@ button{
     color: white;
     font-size: large;
 }
+button:hover{
+    background-color: rgb(187, 86, 19);
+    background-color: turquoise;
+    color: gray;
+    
+
+}
 
 #start-button{
     background-color: white;

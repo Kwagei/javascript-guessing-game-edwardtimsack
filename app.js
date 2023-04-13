@@ -63,6 +63,7 @@ startBtn.addEventListener("click", function () {
             button.disabled = true;
             button.style.backgroundColor = 'gold';
             button.style.color = 'black'
+            alert("Guess Too Low")
             lives.textContent = Number(lives.textContent) - 1;
             
 
@@ -72,6 +73,7 @@ startBtn.addEventListener("click", function () {
             button.disabled = true;
             button.style.backgroundColor = 'red';
             button.style.color = 'black'
+            alert("Guess Too High")
             lives.textContent = Number(lives.textContent) - 1;
 
           }
